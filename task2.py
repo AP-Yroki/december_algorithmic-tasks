@@ -17,4 +17,4 @@ def findmid(array):
 print(findmid(arr1))
 print(findmid(arr2))
 
-
+7

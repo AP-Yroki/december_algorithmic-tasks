@@ -28,8 +28,9 @@ def knightDialer(n):
         for i in range(10):
             # Для каждой цифры добавляем количество способов из предыдущей цифры,
             # учитывая возможные ходы коня
+
             for panel in panels[i]:
-                new_ways[panel] = (new_ways[panel] + ways[i]) % mod
+                new_ways[panel] = (new_ways[panel] + ways[i])
 
         # Обновляем ways для следующего шага
         ways = new_ways
@@ -39,7 +40,8 @@ def knightDialer(n):
 
 
 
-result = knightDialer(1)
+result = knightDialer(3)
 print(result)
 
 
+print(5 % 2)
